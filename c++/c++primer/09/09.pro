@@ -14,4 +14,9 @@ SOURCES += main.cpp \
     ex9_15.cpp \
     ex9_18.cpp \
     ex9_20.cpp \
-    ex9_24.cpp
+    ex9_24.cpp \
+    ex9_26.cpp \
+    capacity_size.cpp \
+    ex9_38.cpp \
+    ex9_39.cpp \
+    ex9_41.cpp
