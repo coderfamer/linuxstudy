@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 
     for (i=1; i<argc; i++)
     {
-        printf("%s: ", argv[i]);
+        printf("%s: ", argv[is]);
         if (lstat(argv[i], &buf) < 0)
         {
             err_ret("lstat error");

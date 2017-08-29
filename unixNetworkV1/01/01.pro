@@ -4,5 +4,4 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp \
-    ex8_01.cpp \
-    buf.cpp
+    1_05.c
