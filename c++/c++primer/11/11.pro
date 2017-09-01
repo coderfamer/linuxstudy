@@ -4,5 +4,5 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp \
-    word_count.cpp \
-    ex11_01.cpp
+    ex11_07.cpp \
+    test.cpp
