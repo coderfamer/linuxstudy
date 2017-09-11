@@ -4,4 +4,5 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp \
-    3_10.c
+    3_10.c \
+    function.c
