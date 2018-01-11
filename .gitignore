@@ -1,0 +1,28 @@
+# This file is used to ignore files which are generated
+# ----------------------------------------------------------------------------
+
+!core/
+*.*#
+*.a
+*.app
+*.autosave
+*.core
+*.debug
+*.embed.manifest
+*.moc
+*.o
+*.obj
+*.orig
+*.prl
+*.qm
+*.rc
+*.rej
+*.res
+*.so
+*.so.*
+*.h.gch
+*_pch.h.cpp
+*_resource.rc
+*_wrapper.bat
+*_wrapper.sh
+*~
