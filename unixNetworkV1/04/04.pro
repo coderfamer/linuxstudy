@@ -4,9 +4,4 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp \
-    4_03.c \
-    4_08.c \
-    4_09.c \
-    4_12.c \
-    4_16.c \
-    4_21.c
+    ex4_11.c
