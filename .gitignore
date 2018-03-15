@@ -2,7 +2,6 @@
 # ----------------------------------------------------------------------------
 
 !core/
-*.out
 *.*#
 *.a
 *.app
@@ -21,9 +20,16 @@
 *.res
 *.so
 *.so.*
-*.h.gch
 *_pch.h.cpp
 *_resource.rc
 *_wrapper.bat
 *_wrapper.sh
 *~
+*.exe
+*.out
+*.user
+*.pro
+*.pro.user
+
+qt_create_source/
+Debug/

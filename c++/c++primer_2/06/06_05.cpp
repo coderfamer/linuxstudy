@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+double myABS(double val)
+{
+    if (val < 0)
+    {
+        return val * -1;
+    }
+    else
+    {
+        return val;
+    }
+}
+
+double myABS2(double val)
+{
+    return abs(val);
+}
+
+int main()
+{
+    double num;
+    cout << "please enter a number: ";
+    cin >> num;
+    cout << num << "'s abs is " << myABS(num) << endl;
+    cout << num << "'s abs is " << myABS2(num) << endl;
+
+    return 0;
+}
