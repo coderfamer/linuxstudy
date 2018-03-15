@@ -5,4 +5,5 @@ CONFIG -= qt
 
 SOURCES += main.cpp \
     3_10.c \
-    function.c
+    function.c \
+    ex3_15.c

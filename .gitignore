@@ -25,6 +25,7 @@
 *_wrapper.bat
 *_wrapper.sh
 *~
+<<<<<<< HEAD
 *.exe
 *.out
 *.user
@@ -33,3 +34,5 @@
 
 qt_create_source/
 Debug/
+=======
+>>>>>>> 09c6c564a5a96a8f85ad269fbe0daa9ff59b488c
