@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 #include <iostream>
 
 using namespace std;
@@ -19,3 +20,14 @@ int main()
     }while(cin);
     return 0;
 }
+=======
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char const *argv[])
+{
+	/* code */
+	return 0;
+}
+>>>>>>> Stashed changes
