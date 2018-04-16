@@ -1,0 +1,5 @@
+/home/quan/share/dissertation/project/attendance_system/build/LINUX/attendance/CMakeFiles/edit_cache.dir
+/home/quan/share/dissertation/project/attendance_system/build/LINUX/attendance/CMakeFiles/rebuild_cache.dir
+/home/quan/share/dissertation/project/attendance_system/build/LINUX/attendance/src/CMakeFiles/edit_cache.dir
+/home/quan/share/dissertation/project/attendance_system/build/LINUX/attendance/src/CMakeFiles/rebuild_cache.dir
+/home/quan/share/dissertation/project/attendance_system/build/LINUX/attendance/src/CMakeFiles/attendance_sys.dir

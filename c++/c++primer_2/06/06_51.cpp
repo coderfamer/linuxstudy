@@ -1,7 +1,6 @@
 #include <iostream>
 
 using  namespace std;
-
 void f()
 {
     cout << "the function no arguments!!" << endl;
@@ -17,7 +16,7 @@ void f(int, int)
     cout << "the function has two int arguments!!" << endl;
 }
 
-void f(double a, double b = 3.14)
+void f(double , double b = 3.14)
 {
     cout << "the function hai two double arguments!!" << endl;
 }

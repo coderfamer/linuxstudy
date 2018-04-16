@@ -1,0 +1,181 @@
+#include <iostream>
+
+#include "disk.hpp"
+#include "manager.hpp"
+
+namespace AttendanceSYS
+{
+	Disk::Disk()
+	{
+		this->m_db = NULL;
+	}
+
+	Disk::~Disk()
+	{
+
+	}
+
+	bool Disk::init(const string &name)
+	{
+		cout << "sqlite init " << endl;
+		string db = name;
+		bool sql_update = false;
+
+		int ret = sqlite3_open_v2(db.c_str(), &this->m_db, SQLITE_OPEN_READWRITE | SQLITE_OPEN_CREATE, NULL);
+		if (SQLITE_OK != ret)
+		{
+			return false;
+		}
+
+		/////select or create the table of admin
+		{
+			sqlite3_stmt *stmt = NULL;
+			string sql = "select COUNT(*) as cnt from sqlite_master where type='table' and name ='AD_ADMIN' ";
+			sqlite3_prepare_v2(this->m_db, sql.c_str(), sql.length(), &stmt, NULL);
+			ret = sqlite3_step(stmt);
+
+			if (ret == SQLITE_ROW)
+			{
+				int cnt = sqlite3_column_int(stmt, 0);
+
+				sqlite3_finalize(stmt);
+				if (cnt == 0)
+				{
+					string new_table = "create table AD_ADMIN(g_id text not null, g_pwd text not null,"
+								" g_name text not null,g_sex text not null, g_age integer not null)";
+					sqlite3_prepare(this->m_db, new_table.c_str(), -1, &stmt, NULL);
+					ret = sqlite3_step(stmt);
+					sqlite3_finalize(stmt);
+				}else{
+					if (sql_update){
+
+					}
+				}
+			}else{
+				sqlite3_finalize(stmt);
+			}
+		}
+
+		/////create or select table of student
+		{
+			sqlite3_stmt *stmt = NULL;
+			string sql = "select COUNT(*) as cnt from sqlite_master where type='table' and name ='AD_STUDENT' ";
+			sqlite3_prepare_v2(this->m_db, sql.c_str(), sql.length(), &stmt, NULL);
+			ret = sqlite3_step(stmt);
+
+			if (ret == SQLITE_ROW)
+			{
+				int cnt = sqlite3_column_int(stmt, 0);
+
+				sqlite3_finalize(stmt);
+				if (cnt == 0)
+				{
+					string new_table = "create table AD_STUDENT(ma_id text not null, ma_name text not null,"
+								" ma_sex text not null, ma_age integer not null)";
+					cout << "student table flag1" << endl;
+					sqlite3_prepare(this->m_db, new_table.c_str(), -1, &stmt, NULL);
+					ret = sqlite3_step(stmt);
+					sqlite3_finalize(stmt);
+				}else{
+					if (sql_update){
+
+					}
+				}
+			}else{
+				sqlite3_finalize(stmt);
+			}
+		}
+		cout << "sqlite end!!!!!!" << endl;
+		sleep(1);
+		return true;
+
+	}
+
+
+	int Disk::get_admin_user(const string &user, admin_user& v_user)
+	{
+		sqlite3_stmt* stmt = NULL;
+		string sql = "select g_pwd,g_name from AD_ADMIN where g_id=?";
+		//lock_guard<recursive_mutex> lck(rec_mtx);
+		sqlite3_prepare(this->m_db, sql.c_str(), -1, &stmt, NULL);
+		sqlite3_bind_text(stmt, 1, user.c_str(), -1, SQLITE_STATIC);
+		int ret = sqlite3_step(stmt);
+		if (ret != SQLITE_ROW)
+		{
+			cout << "disk disk 5" << endl;
+			sqlite3_finalize(stmt);
+			cout << SYS_ERR_USER << "disk disk 6" << endl;
+
+			return SYS_ERR_USER;
+		}
+
+		cout << "disk 2 " << endl;
+		v_user.pwd = (const char *)sqlite3_column_text(stmt, 0);
+		v_user.name = (const char *)sqlite3_column_text(stmt, 1);
+		cout << "disk 3" << endl;
+		cout << v_user.pwd << " printf  " << v_user.name << endl;
+		sqlite3_finalize(stmt);
+
+		return SUCCESS;
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
