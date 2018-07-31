@@ -1,0 +1,2 @@
+i 是 vector<string>::size_type类型，为unsigned类型，传入负值会自动转换，
+所以size_type会确保i为正数或者0；

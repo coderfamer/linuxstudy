@@ -2,6 +2,7 @@
 #include <vector>
 
 using namespace std;
+
 using Ptr = vector<int> *;
 
 auto make_dynameically()
@@ -9,25 +10,28 @@ auto make_dynameically()
     return new vector<int>{};
 }
 
-auto poplulate(Ptr vec)
+auto popolate(Ptr vec)
 {
-    for (int i; cout << "Please Enter:\n", cin >> i; vec->push_back(i));
+    for (int i; cout << "Pls Enter:\n", cin >> i; vec->push_back(i));
     return vec;
 }
 
 auto print(Ptr vec) ->ostream&
 {
-    for (auto i : * vec)
-        cout << i << " ";
+    for (auto &w : *vec)
+    {
+        cout << w << " ";
+    }
     return cout;
 }
 
-
 int main()
 {
-    auto vec = poplulate(make_dynameically());
+    auto vec = popolate(make_dynameically());
     print(vec) << endl;
-    delete vec;
+
+    delete  vec;
+    vec = nullptr;
 
     return 0;
 }
