@@ -23,7 +23,6 @@ int main()
     //auto iter = vec.begin();
     auto vec_true = find_temp(vec.begin(), vec.end(), 4);
     cout << *vec_true << endl;
-
     return 0;
 }
 
