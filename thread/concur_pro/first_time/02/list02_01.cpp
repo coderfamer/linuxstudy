@@ -1,22 +1,23 @@
+//
+// Created by quan on 18-9-10.
+//
 #include <iostream>
 #include <thread>
 
-using namespace std;
+using std::thread;
 
 void do_something(int &i)
 {
     ++i;
-    cout << i << endl;
 }
 
 struct func
 {
     int &i;
-    func (int &i_) : i(i_)
-    {  }
+    func(int &i_) : i(i_){}
     void operator()()
     {
-        for (unsigned j = 0; j < 100000; ++j)
+        for (unsigned j = 0; j < 1000000000; ++j)
         {
             do_something(i);
         }
@@ -28,10 +29,9 @@ void oops()
     int some_local_state = 0;
     func my_func(some_local_state);
     thread my_thread(my_func);
-    my_thread.detach();
-    //my_thread.join();
+    my_thread.join();//do not wait for thread to finish
+    std::cout << my_thread.joinable() << std::endl;
 }
-
 
 int main()
 {
