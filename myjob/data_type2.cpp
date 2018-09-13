@@ -16,6 +16,7 @@ int fnc(int x)
 int main()
 {
     int x = 9999;
+    cout << "the number is" << endl;
     cout << fnc(x) << endl;
     return 0;
 }
