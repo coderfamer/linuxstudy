@@ -1,3 +1,0 @@
-https://github.com/progschj/ThreadPool/blob/master/ThreadPool.h
-http://15.ieda.lanyus.com
-http://idea.lanyus.com/

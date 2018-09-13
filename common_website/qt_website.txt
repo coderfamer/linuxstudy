@@ -1,2 +1,0 @@
-qt installation package website
-	download.qt.io/archive
