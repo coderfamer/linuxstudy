@@ -32,12 +32,12 @@ private:
     static void accept_thread_proc(CMyReactor *pReactor);
     static void worker_thread_proc(CMyReactor *pReactor);
 private:
-    int m_listfd = 0;
+    int m_listenfd = 0;
     int m_epollfd = 0;
     bool m_bStop = false;
 
     std::shared_ptr<std::thread> m_acceptthread;
-	std::shared_ptr<std::thread> m_wokerthreads[WORKER_THREAD_NUM];
+	std::shared_ptr<std::thread> m_workerthreads[WORKER_THREAD_NUM];
 
 	std::condition_variable m_acceptcond;
 	std::mutex m_acceptmutex;
