@@ -1,7 +1,7 @@
 #include "common.h"
 
 int i = 42;
-int main()
+int main021314()
 {
     int i = 100;
     int j = i;
