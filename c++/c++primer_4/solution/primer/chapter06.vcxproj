@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{4BF0791C-C631-472D-9EF2-6C15F17F26FB}</ProjectGuid>
+    <ProjectGuid>{9A65DACF-790E-49D4-8ED9-4274D62C888E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>chapter03</RootNamespace>
+    <RootNamespace>chapter06</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -76,22 +76,22 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(Binpath)</OutDir>
+    <OutDir>$(binpath)</OutDir>
     <IntDir>$(objpath)</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(Binpath)</OutDir>
+    <OutDir>$(binpath)</OutDir>
     <IntDir>$(objpath)</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(Binpath)</OutDir>
+    <OutDir>$(binpath)</OutDir>
     <IntDir>$(objpath)</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(Binpath)</OutDir>
+    <OutDir>$(binpath)</OutDir>
     <IntDir>$(objpath)</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -155,15 +155,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\ch03\03-02.cpp" />
-    <ClCompile Include="..\..\src\ch03\03-04.cpp" />
-    <ClCompile Include="..\..\src\ch03\03-05.cpp" />
-    <ClCompile Include="..\..\src\ch03\03-0607.cpp" />
-    <ClCompile Include="..\..\src\ch03\03_10.cpp" />
-    <ClCompile Include="..\..\src\ch03\03_11-20.cpp" />
-    <ClCompile Include="..\..\src\ch03\03_31-40.cpp" />
-    <ClCompile Include="..\..\src\ch03\main.cpp" />
-    <ClCompile Include="..\..\src\ch03\StdAfx.cpp">
+    <ClCompile Include="..\..\src\ch06\06_01-10.cpp" />
+    <ClCompile Include="..\..\src\ch06\main.cpp" />
+    <ClCompile Include="..\..\src\ch06\StdAfx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -171,8 +165,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\src\ch03\common.h" />
-    <ClInclude Include="..\..\src\ch03\StdAfx.h" />
+    <ClInclude Include="..\..\src\ch06\common.h" />
+    <ClInclude Include="..\..\src\ch06\StdAfx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
