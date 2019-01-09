@@ -160,6 +160,7 @@
     <ClCompile Include="..\..\src\ch03\03-05.cpp" />
     <ClCompile Include="..\..\src\ch03\03-0607.cpp" />
     <ClCompile Include="..\..\src\ch03\03_10.cpp" />
+    <ClCompile Include="..\..\src\ch03\03_11-20.cpp" />
     <ClCompile Include="..\..\src\ch03\main.cpp" />
     <ClCompile Include="..\..\src\ch03\StdAfx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
