@@ -2,6 +2,7 @@
 
 //1.cpp头文件
 //2.c系统文件
+#include <cctype>
 //3.c++系统文件
 #include <iostream>
 #include <string>
