@@ -7,8 +7,8 @@ class Person
     friend std::ostream &print(std::ostream &os, const Person &per);
 public:
     Person() = default;
-    Person(const string &name) : m_name(name) { }
-    Person(const string &name, const string &address) 
+    explicit Person(const std::string &name) : m_name(name) { }
+    Person(const std::string &name, const std::string &address) 
         : m_name(name), m_address(address) { }
 
     Person(std::istream & is);

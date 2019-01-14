@@ -4,18 +4,13 @@ using std::string;
 using std::istream;
 using std::ostream;
 
-double Sales_data::avg_price() const
-{
-    if (m_units_sold)
-        return revenue / m_units_sold;
-    else
-        return 0;
-}
 
-Sales_data::Sales_data(std::istream &is)
-{
-    read(is, *this);
-}
+
+//Sales_data::Sales_data(std::istream &is)
+//{
+//    std::cout << "is canshu" << std::endl;
+//    read(is, *this);
+//}
 
 Sales_data &Sales_data::combine(const Sales_data &rhs)
 {
