@@ -1,4 +1,20 @@
-
-line number :1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 
- 
-line number :1 1 1 1 2 2 2 2 
+ni hao woshi ni hao 
+ni hao woshi ni hao 
+ni
+hao
+woshi
+ni
+hao
+ni hao woshi ni hao 
+ni hao woshi ni hao 
+ni
+hao
+woshi
+ni
+hao
+hao
+line number :1 1 2 2 
+ni
+line number :1 1 2 2 
+woshi
+line number :1 2 

@@ -93,18 +93,20 @@ void exe1108_word()
     cout << endl;
 }
 
-void split_line(string words, vector<std::string>& vstr)
+void split_line(string &words, vector<std::string>& vstr)
 {
-    string str;
+    string str = "";
+	cout << words << endl;
     for (auto &s : words)
     {
-        if (!isgraph(s))
+        if (!isspace(s))
         {
-            str.push_back(s);
+			str += s;
         }
-        else if (isgraph(s))
+        else if (isspace(s))
         {
             vstr.push_back(str);
+			cout << str << endl;
             str = "";
         }
     }
@@ -117,7 +119,12 @@ void exe1109_words()
     while (getline(cin, words))
     {
         vector<string> vwords;
+		cout << words << endl;
         split_line(words, vwords);
+		/*for (auto &w : vwords)
+		{
+			cout << w << endl;
+		}*/
         for (auto &s : vwords)
         {
             word_line[s].push_back(line);

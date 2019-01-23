@@ -11,5 +11,5 @@ void exe1107_family();
 
 void exe1108_word();
 
-void split_line(std::string words, std::vector<std::string> &vstr);
+void split_line(std::string &words, std::vector<std::string> &vstr);
 void exe1109_words();
