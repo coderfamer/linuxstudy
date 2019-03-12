@@ -1,3 +1,0 @@
-/home/quan/linuxstudy/test/myreactor/build/CMakeFiles/edit_cache.dir
-/home/quan/linuxstudy/test/myreactor/build/CMakeFiles/rebuild_cache.dir
-/home/quan/linuxstudy/test/myreactor/build/CMakeFiles/myreactorserver.dir
