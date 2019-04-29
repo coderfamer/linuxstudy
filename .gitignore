@@ -18,7 +18,6 @@
 *.rc
 *.rej
 *.res
-*.so
 *.so.*
 *_pch.h.cpp
 *_resource.rc
