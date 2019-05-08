@@ -12,7 +12,7 @@ int main()
     stat(pathname, buf);
 
     printf("st_dev = %lu\nst_szie = %ld\n", buf->st_dev, buf->st_size);
-
+    printf("st_mode = %u\n", buf->st_mode);
     return 0;
 }
 
