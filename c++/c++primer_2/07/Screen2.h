@@ -17,8 +17,8 @@ public:
     char get() const
     { return contents[cursor]; }
     inline char get(pos ht, pos wd) const;
-    Screen set(char);
-    Screen set(pos, pos, char);
+    Screen &set(char);
+    Screen &set(pos, pos, char);
     Screen move(pos r, pos c);
     Screen display();
 private:
@@ -40,13 +40,13 @@ char Screen::get(pos r, pos c) const
     return contents[row + c];
 }
 
-inline Screen Screen::set(char c)
+inline Screen &Screen::set(char c)
 {
     contents[cursor] = c;
     return *this;
 }
 
-inline Screen Screen::set(pos r, pos col, char ch)
+inline Screen &Screen::set(pos r, pos col, char ch)
 {
     contents[r * width + col] = ch;
     return *this;

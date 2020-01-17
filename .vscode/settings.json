@@ -89,6 +89,8 @@
       "tuple": "cpp",
       "type_traits": "cpp",
       "utility": "cpp",
-      "typeinfo": "cpp"
+      "typeinfo": "cpp",
+      "random": "cpp",
+      "ex07_41_sales_data.h": "c"
     },
 }
