@@ -93,4 +93,5 @@
       "random": "cpp",
       "ex07_41_sales_data.h": "c"
     },
+    "cmake.configureOnOpen": false,
 }

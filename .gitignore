@@ -525,6 +525,7 @@ dkms.conf
 ##############################vs code#######################################################
 .vscode/*
 !.vscode/settings.json
+!.vscode/c_cpp_properties.json
 !.vscode/task.json
 !.vscode/launch.json
 !.vscode/extensions.json
