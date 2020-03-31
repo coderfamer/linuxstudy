@@ -4,9 +4,11 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/include/c++/8/x86_64-redhat-linux/32/",
                 "/usr/include/c++/8",
+                "/usr/include/c++/8/x86_64-redhat-linux/32/",
                 "/usr/local/include",
+                "/usr/include/linux",
+                "/usr/lib/gcc/x86_64-redhat-linux/8/include",
                 "/usr/include"
             ],
             "defines": [],

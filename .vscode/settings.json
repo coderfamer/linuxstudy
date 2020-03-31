@@ -6,7 +6,7 @@
     "python.formatting.provider": "yapf",
     "C_Cpp.updateChannel": "Insiders",
     "git.ignoreLegacyWarning": true,
-    "editor.fontSize": 17,
+    "editor.fontSize": 20,
     "better-comments.tags": [
       {
         "tag": "!",
@@ -91,7 +91,8 @@
       "utility": "cpp",
       "typeinfo": "cpp",
       "random": "cpp",
-      "ex07_41_sales_data.h": "c"
+      "ex07_41_sales_data.h": "c",
+      "ios": "cpp"
     },
     "cmake.configureOnOpen": false,
 }
